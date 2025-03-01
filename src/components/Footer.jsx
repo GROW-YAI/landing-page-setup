@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold">Phone Support</h3>
           <p className="text-[#7aa709] text-sm">24 HOURS A DAY</p>
-          <p className="text-2xl mt-2">+ 000 000 0000</p>
+          <p className="text-2xl mt-2">+233 59 366 5495</p>
         </div>
 
         <div>
