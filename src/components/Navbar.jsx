@@ -30,12 +30,12 @@ const Navbar = () => {
         </li>
         <li className="flex items-center gap-2">
           <NavLink to="/about-product" className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
-            About Product
+            About
           </NavLink>
         </li>
         <li className="flex items-center gap-2">
           <NavLink to="/about-innovator" className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
-            About Innovator
+            Innovator
           </NavLink>
         </li>
         <li className="flex items-center gap-2">
