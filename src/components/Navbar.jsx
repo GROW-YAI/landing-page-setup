@@ -24,7 +24,13 @@ const Navbar = () => {
       </div>
       <ul className={`md:flex gap-6 text-gray-700 ${isOpen ? "block" : "hidden"} md:block`}>
         <li className="flex items-center gap-2">
-          <NavLink to="/" exact className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "hover:text-blue-600"
+            }
+            end
+          >
             Home
           </NavLink>
         </li>
@@ -39,12 +45,23 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="flex items-center gap-2">
-          <NavLink to="/showcase" className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
+          <NavLink
+            to="/showcase"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "hover:text-blue-600"
+            }
+          >
             Showcase
           </NavLink>
         </li>
         <li className="flex items-center gap-2">
-          <NavLink to="/contact" className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600" : "hover:text-blue-600"
+            }
+            onClick={closeMenu}
+          >
             Contact
           </NavLink>
         </li>

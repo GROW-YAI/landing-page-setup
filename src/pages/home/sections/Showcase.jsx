@@ -79,7 +79,7 @@ const Showcase = () => {
     <div className="bg-gradient-to-b from-blue-50 to-white py-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <h2 
-          className="text-4xl md:text-5xl font-bold text-center text-blue-800 mb-4"
+          className="text-4xl md:text-5xl font-bold text-center text-[#0057A4] mb-4"
           data-aos="fade-down"
         >
           Our Services
@@ -123,7 +123,7 @@ const Showcase = () => {
           className="mt-16 text-center"
           data-aos="fade-up"
         >
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg transform hover:scale-105 duration-300">
+          <button className="bg-[#0057A4] text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg transform hover:scale-105 duration-300">
             Schedule a Consultation
           </button>
         </div>

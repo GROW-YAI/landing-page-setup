@@ -16,16 +16,28 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">Follow Us</h3>
           <p className="text-[#7aa709] text-sm">SOCIAL MEDIA CHANNELS</p>
           <div className="flex justify-center md:justify-start gap-4 mt-3 text-xl">
-            <a href="" className="text-[#7aa709] hover:text-white">
+            <a 
+              href="https://www.facebook.com/share/18hqykxv83/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-[#7aa709] hover:text-white transition-colors duration-300"
+            >
               <FaFacebook />
             </a>
-            <a href="" className="text-[#7aa709] hover:text-white">
-              <FaTwitter />
-            </a>
-            <a href="" className="text-[#7aa709] hover:text-white">
+            <a 
+              href="http://www.youtube.com/@ihospitality-41" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-[#7aa709] hover:text-white transition-colors duration-300"
+            >
               <FaYoutube />
             </a>
-            <a href="" className="text-[#7aa709] hover:text-white">
+            <a 
+              href="https://www.instagram.com/ihospitalitybusiness?igsh=bGtxNmZkZmJxbzVw" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-[#7aa709] hover:text-white transition-colors duration-300"
+            >
               <FaInstagram />
             </a>
           </div>
