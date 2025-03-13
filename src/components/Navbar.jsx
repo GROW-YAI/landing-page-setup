@@ -14,62 +14,100 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-md py-4 px-6 flex justify-between items-center z-50">
-      <div className="flex items-center">
-        <img src={logo} alt="Logo" className="h-10 w-12 mr-4" />
-        <div className="text-xl font-bold text-gray-800 lg:block">
-          iHospitality Business Consult
+    <nav className="fixed top-0 w-full bg-white shadow-md z-50">
+      <div className="px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center">
+          <img src={logo} alt="Logo" className="h-10 w-12 mr-4" />
+          <div className="text-xl font-bold text-gray-800 lg:block">
+            iHospitality Business Consult
+          </div>
         </div>
+        <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
+          {isOpen ? (
+            <span className="text-2xl text-gray-800">×</span>
+          ) : (
+            <span className="text-2xl text-gray-800">☰</span>
+          )}
+        </div>
+        <ul className="hidden md:flex gap-6 text-gray-700">
+          <NavLinks closeMenu={closeMenu} />
+        </ul>
       </div>
-      <div className="md:hidden" onClick={toggleMenu}>
-        {isOpen ? <span className="text-2xl text-gray-800">×</span> : <span className="text-2xl text-gray-800">☰</span>}
+
+      {/* Mobile Menu Dropdown */}
+      <div
+        className={`${
+          isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+        } md:hidden bg-white overflow-hidden transition-all duration-300 ease-in-out`}
+      >
+        <ul className="flex flex-col gap-2 px-6 pb-4">
+          <NavLinks closeMenu={closeMenu} />
+        </ul>
       </div>
-      <ul className={`md:flex gap-6 text-gray-700 ${isOpen ? "block" : "hidden"} md:block`}>
-        <li className="flex items-center gap-2">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "text-blue-600" : "hover:text-blue-600"
-            }
-            end
-          >
-            Home
-          </NavLink>
-        </li>
-        <li className="flex items-center gap-2">
-          <NavLink to="/about-product" className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
-            About
-          </NavLink>
-        </li>
-        <li className="flex items-center gap-2">
-          <NavLink to="/about-innovator" className="hover:text-blue-600 flex items-center" activeClassName="text-blue-600" onClick={closeMenu}>
-            Innovator
-          </NavLink>
-        </li>
-        <li className="flex items-center gap-2">
-          <NavLink
-            to="/showcase"
-            className={({ isActive }) =>
-              isActive ? "text-blue-600" : "hover:text-blue-600"
-            }
-          >
-            Showcase
-          </NavLink>
-        </li>
-        <li className="flex items-center gap-2">
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "text-blue-600" : "hover:text-blue-600"
-            }
-            onClick={closeMenu}
-          >
-            Contact
-          </NavLink>
-        </li>
-      </ul>
     </nav>
   );
 };
+
+// Separate component for navigation links
+const NavLinks = ({ closeMenu }) => (
+  <>
+    <li className="py-2">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600" : "hover:text-blue-600"
+        }
+        onClick={closeMenu}
+        end
+      >
+        Home
+      </NavLink>
+    </li>
+    <li className="py-2">
+      <NavLink
+        to="/about-product"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600" : "hover:text-blue-600"
+        }
+        onClick={closeMenu}
+      >
+        About
+      </NavLink>
+    </li>
+    <li className="py-2">
+      <NavLink
+        to="/about-innovator"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600" : "hover:text-blue-600"
+        }
+        onClick={closeMenu}
+      >
+        Innovator
+      </NavLink>
+    </li>
+    <li className="py-2">
+      <NavLink
+        to="/showcase"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600" : "hover:text-blue-600"
+        }
+        onClick={closeMenu}
+      >
+        Showcase
+      </NavLink>
+    </li>
+    <li className="py-2">
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600" : "hover:text-blue-600"
+        }
+        onClick={closeMenu}
+      >
+        Contact
+      </NavLink>
+    </li>
+  </>
+);
 
 export default Navbar;
