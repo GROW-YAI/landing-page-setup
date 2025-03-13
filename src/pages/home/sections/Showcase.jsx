@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import "aos/dist/aos.css";
 import { 
   FaHotel, 
@@ -71,6 +72,8 @@ const services = [
 ];
 
 const Showcase = () => {
+  const navigate = useNavigate();
+  
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -123,7 +126,10 @@ const Showcase = () => {
           className="mt-16 text-center"
           data-aos="fade-up"
         >
-          <button className="bg-[#0057A4] text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg transform hover:scale-105 duration-300">
+          <button 
+            onClick={() => navigate('/contact')}
+            className="bg-[#0057A4] text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow-lg transform hover:scale-105 duration-300"
+          >
             Schedule a Consultation
           </button>
         </div>

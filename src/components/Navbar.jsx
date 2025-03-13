@@ -16,8 +16,10 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-white shadow-md py-4 px-6 flex justify-between items-center z-50">
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="h-10 w-12 rounded-full mr-2" />
-        <div className="text-xl font-bold text-gray-800">iHospitality Business Consult</div>
+        <img src={logo} alt="Logo" className="h-10 w-12 mr-4" />
+        <div className="text-xl font-bold text-gray-800 lg:block">
+          iHospitality Business Consult
+        </div>
       </div>
       <div className="md:hidden" onClick={toggleMenu}>
         {isOpen ? <span className="text-2xl text-gray-800">×</span> : <span className="text-2xl text-gray-800">☰</span>}

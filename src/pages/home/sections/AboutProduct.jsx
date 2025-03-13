@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom'; // Add this import
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { 
@@ -13,6 +14,8 @@ import {
 } from 'react-icons/fa';
 
 const AboutProduct = () => {
+  const navigate = useNavigate(); // Add this hook
+  
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -106,7 +109,10 @@ const AboutProduct = () => {
           >
             <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-lg mb-6">Join us in revolutionizing the hospitality industry with innovative solutions and expert guidance.</p>
-            <button className="flex items-center gap-2 mx-auto bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+            <button 
+              onClick={() => navigate('/showcase')}
+              className="flex items-center gap-2 mx-auto bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors"
+            >
               Get Started
               <FaArrowRight className="w-5 h-5" />
             </button>

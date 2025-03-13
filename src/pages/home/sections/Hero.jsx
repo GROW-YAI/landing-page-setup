@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import localImage from "../../../images/bgimage.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const images = [
@@ -43,6 +45,7 @@ const Hero = () => {
           {sentence}
         </div>
         <button 
+          onClick={() => navigate('/showcase')}
           className="mt-6 px-8 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 animate-fadeInUp"
         >
           Learn More
