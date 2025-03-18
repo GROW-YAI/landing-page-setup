@@ -34,7 +34,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      
       <div
         className={`${
           isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
@@ -48,7 +48,6 @@ const Navbar = () => {
   );
 };
 
-// Separate component for navigation links
 const NavLinks = ({ closeMenu }) => (
   <>
     <li className="py-2">

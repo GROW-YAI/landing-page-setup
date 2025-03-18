@@ -1,5 +1,5 @@
 import React from "react";
-import innovatorImage from "../../../images/inoimage.jpg";
+import innovatorImage from "../../../images/inoimage.jpeg";
 
 const AboutInnovator = () => {
   return (
