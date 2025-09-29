@@ -79,7 +79,7 @@ const Showcase = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-white py-16 px-6 md:px-16">
+    <div className="bg-gradient-to-b from-blue-50 to-white py-16 px-6 md:px-16 mt-10">
       <div className="max-w-7xl mx-auto">
         <h2 
           className="text-4xl md:text-5xl font-bold text-center text-[#0057A4] mb-4"

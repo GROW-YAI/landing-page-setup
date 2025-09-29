@@ -21,7 +21,7 @@ const AboutProduct = () => {
   }, []);
 
   return (
-    <div className="p-12 flex flex-col justify-center items-center min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-white">
+    <div className="p-12 mt-12 flex flex-col justify-center items-center min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-white">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-center gap-4 mb-16" data-aos="fade-down">
           <FaBuilding className="w-10 h-10 text-blue-600" />
