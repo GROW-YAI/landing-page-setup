@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold">Phone Support</h3>
           <p className="text-[#7aa709] text-sm">24 HOURS A DAY</p>
-          <p className="text-2xl mt-2">+233 59 366 5495</p>
+          <p className="text-xl mt-2">+233 59 366 5495</p>
         </div>
 
         <div>
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold">Our Newsletter</h3>
           <p className="text-[#7aa709] text-sm">SIGN UP FOR SPECIAL OFFERS</p>
           <div className="mt-3 flex">
@@ -56,7 +56,7 @@ const Footer = () => {
               SUBSCRIBE
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

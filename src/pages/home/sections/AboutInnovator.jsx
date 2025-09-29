@@ -3,7 +3,7 @@ import innovatorImage from "../../../images/inoimage.jpeg";
 
 const AboutInnovator = () => {
   return (
-    <div className="py-20 px-8 min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-100">
+    <div className="py-20 px-8 mt-6 min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-100">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-800 mb-16 tracking-tight">
           Meet the Innovator
