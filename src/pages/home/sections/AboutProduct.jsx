@@ -25,7 +25,7 @@ const AboutProduct = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-center gap-4 mb-16" data-aos="fade-down">
           <FaBuilding className="w-10 h-10 text-blue-600" />
-          <h2 className="text-5xl font-extrabold text-center text-blue-600 tracking-wide">
+          <h2 className="text-2xl md:text-5xl font-bold md:font-extrabold text-center text-blue-600 tracking-wide">
             Elevating Hospitality Excellence
           </h2>
         </div>
