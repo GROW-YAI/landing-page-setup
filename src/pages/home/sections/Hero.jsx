@@ -41,7 +41,7 @@ const Hero = () => {
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <div className="text-4xl font-bold text-white mb-4 animate-fadeIn">
+        <div className="text-xl sm:text-3xl  md:text-4xl font-bold text-white mb-4 animate-fadeIn mt-20 md:mt-0">
           {sentence}
         </div>
         <button 
