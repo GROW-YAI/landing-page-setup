@@ -12,6 +12,11 @@ import {
 } from "react-icons/fa";
 import Aos from "aos";
 
+import conferenceImage from '../../../images/events.jpg';
+import staffRecruitment from '../../../images/staffrecruitment.jpg';
+import qualityAssurance from '../../../images/quality.jpg';
+import staffTraining from '../../../images/stafftraining.jpg'
+
 const services = [
   { 
     title: "Hotel Reservations", 
@@ -27,7 +32,8 @@ const services = [
     description: "End-to-end event management solutions for successful conferences, meetings, and corporate events. From planning to execution, we ensure memorable experiences.",
     bgColor: "bg-green-50",
     iconColor: "text-green-600",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+    image: conferenceImage 
+
   },
   { 
     title: "Staff Training", 
@@ -35,7 +41,7 @@ const services = [
     description: "Comprehensive training programs designed to elevate service standards and develop professional hospitality skills for your team.",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600",
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    image:staffTraining
   },
   { 
     title: "Staff Recruitment", 
@@ -51,7 +57,7 @@ const services = [
     description: "Comprehensive quality audits and assessments to maintain high service standards and ensure consistent guest satisfaction.",
     bgColor: "bg-red-50",
     iconColor: "text-red-600",
-    image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    image:qualityAssurance
   },
   { 
     title: "Marketing Consultancy", 
@@ -59,7 +65,7 @@ const services = [
     description: "Strategic marketing solutions to enhance your brand visibility and attract more guests through effective digital and traditional channels.",
     bgColor: "bg-teal-50",
     iconColor: "text-teal-600",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    image:staffRecruitment
   },
   { 
     title: "Hotel Rebranding", 
