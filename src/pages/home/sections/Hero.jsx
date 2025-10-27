@@ -30,7 +30,7 @@ const Hero = () => {
 
   return (
     <div
-      className="relative p-16 flex justify-center items-center align-middle h-[90vh] bg-cover bg-center transition-all duration-1000 ease-in-out"
+      className="relative p-16 flex justify-center items-center align-middle h-[90vh] bg-cover bg-center transition-all duration-1000 ease-in-out overflow-x-hidden"
       style={{
         backgroundImage: `url(${images[currentImageIndex]})`,
       }}
