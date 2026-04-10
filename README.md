@@ -117,36 +117,6 @@ To preview the production build:
 npm run preview
 ```
 
----
-
-## Project Structure
-
-```
-landing-page-setup/
-├── app/                    # Next.js style app directory (TypeScript components)
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # Reusable React components
-│   ├── images/            # Image assets
-│   ├── layouts/           # Layout components
-│   ├── pages/             # Page components
-│   │   └── home/          # Home page sections
-│   │       └── sections/  # Hero, AboutProduct, AboutInnovator, Showcase, Contact
-│   ├── App.jsx            # Main App component with routing
-│   ├── main.jsx           # Entry point
-│   └── index.css          # Global styles
-├── .env                   # Environment variables (not tracked by Git)
-├── .env.example           # Example environment variables
-├── .gitignore             # Git ignore rules
-├── index.html             # HTML entry point
-├── package.json           # Project dependencies
-├── tailwind.config.js     # Tailwind CSS configuration
-├── tsconfig.json          # TypeScript configuration
-└── vite.config.js         # Vite configuration
-```
-
----
-
 ## License
 
 This project is private and proprietary to iHospitality Business Consult.
