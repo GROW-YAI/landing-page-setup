@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["vite/client"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/types"]
+}
